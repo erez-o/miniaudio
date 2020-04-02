@@ -4368,16 +4368,6 @@ The example below is what a program will typically want to configure for each de
 then the returned object is modified directly. This is important because it ensures that your program continues to work as new configuration options are added
 to the `ma_device_config` structure.
 
-```c
-ma_device_config config = ma_device_config_init(ma_device_type_playback);
-config.playback.format   = ma_format_f32;
-config.playback.channels = 2;
-config.sampleRate        = 48000;
-config.dataCallback      = ma_data_callback;
-config.pUserData         = pMyUserData;
-```
-
-
 See Also
 --------
 ma_device_init()
