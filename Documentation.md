@@ -411,89 +411,89 @@ The Emscripten build emits Web Audio JavaScript directly and should Just Work wi
 
 Build Options
 -------------
-#define these options before including miniaudio.h.
+`#define` these options before including miniaudio.h.
 
-#define MA_NO_WASAPI
+`#define MA_NO_WASAPI`
   Disables the WASAPI backend.
 
-#define MA_NO_DSOUND
+`#define MA_NO_DSOUND`
   Disables the DirectSound backend.
 
-#define MA_NO_WINMM
+`#define MA_NO_WINMM`
   Disables the WinMM backend.
 
-#define MA_NO_ALSA
+`#define MA_NO_ALSA`
   Disables the ALSA backend.
 
-#define MA_NO_PULSEAUDIO
+`#define MA_NO_PULSEAUDIO`
   Disables the PulseAudio backend.
 
-#define MA_NO_JACK
+`#define MA_NO_JACK`
   Disables the JACK backend.
 
-#define MA_NO_COREAUDIO
+`#define MA_NO_COREAUDIO`
   Disables the Core Audio backend.
 
-#define MA_NO_SNDIO
+`#define MA_NO_SNDIO`
   Disables the sndio backend.
 
-#define MA_NO_AUDIO4
+`#define MA_NO_AUDIO4`
   Disables the audio(4) backend.
 
-#define MA_NO_OSS
+`#define MA_NO_OSS`
   Disables the OSS backend.
 
-#define MA_NO_AAUDIO
+`#define MA_NO_AAUDIO`
   Disables the AAudio backend.
 
-#define MA_NO_OPENSL
+`#define MA_NO_OPENSL`
   Disables the OpenSL|ES backend.
 
-#define MA_NO_WEBAUDIO
+`#define MA_NO_WEBAUDIO`
   Disables the Web Audio backend.
 
-#define MA_NO_NULL
+`#define MA_NO_NULL`
   Disables the null backend.
 
-#define MA_NO_DECODING
+`#define MA_NO_DECODING`
   Disables the decoding APIs.
 
-#define MA_NO_DEVICE_IO
+`#define MA_NO_DEVICE_IO`
   Disables playback and recording. This will disable ma_context and ma_device APIs. This is useful if you only want to use miniaudio's data conversion and/or
   decoding APIs. 
 
-#define MA_NO_STDIO
+`#define MA_NO_STDIO`
   Disables file IO APIs.
 
-#define MA_NO_SSE2
+`#define MA_NO_SSE2`
   Disables SSE2 optimizations.
 
-#define MA_NO_AVX2
+`#define MA_NO_AVX2`
   Disables AVX2 optimizations.
 
-#define MA_NO_AVX512
+`#define MA_NO_AVX512`
   Disables AVX-512 optimizations.
 
-#define MA_NO_NEON
+`#define MA_NO_NEON`
   Disables NEON optimizations.
 
-#define MA_LOG_LEVEL <Level>
+`#define MA_LOG_LEVEL <Level>`
   Sets the logging level. Set level to one of the following:
     MA_LOG_LEVEL_VERBOSE
     MA_LOG_LEVEL_INFO
     MA_LOG_LEVEL_WARNING
     MA_LOG_LEVEL_ERROR
 
-#define MA_DEBUG_OUTPUT
+`#define MA_DEBUG_OUTPUT`
   Enable printf() debug output.
 
-#define MA_COINIT_VALUE
+`#define MA_COINIT_VALUE`
   Windows only. The value to pass to internal calls to CoInitializeEx(). Defaults to COINIT_MULTITHREADED.
 
-#define MA_API
+`#define MA_API`
   Controls how public APIs should be decorated. Defaults to `extern`.
 
-#define MA_DLL
+`#define MA_DLL`
   If set, configures MA_API to either import or export APIs depending on whether or not the implementation is being defined. If defining the implementation,
   MA_API will be configured to export. Otherwise it will be configured to import. This has no effect if MA_API is defined externally.
     
